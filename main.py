@@ -65,16 +65,6 @@ class Inventory:
             return True, "Item updated successfully."
         return False, "Item not found."
 
-    def edit_item(self, item_id, quantity=None, expiration_date=None):
-        item_id = str(item_id).strip()
-        self.data['ID'] = self.data['ID'].astype(str).str.strip()
-
-        if item_id in self.data['ID'].values:
-            if quantity is not None:
-                self.data.loc[self.data['ID'] == item_id, 'Quantity'] = quantity
-            if expiration_date is not None:
-                self.data.loc[self.data['ID'] == item_id, 'Expiration Date'] = expiration_date
-            self.save_inventory()
     def delete_item(self, item_id):
         self.data = self.data[self.data['ID'] != item_id]
         self.save_inventory()
