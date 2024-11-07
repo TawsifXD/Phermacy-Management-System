@@ -43,7 +43,7 @@ pip install ttkthemes
 ```bash
 python main.py
 ```
-[![Run on Replit](https://replit.com/badge/github/@RedoanTawsif/Phermacy-Management-System.svg)](https://replit.com/github/@RedoanTawsif/Phermacy-Management-System)
+[![Run on Replit](https://replit.com/badge/github/TawsifXD/Phermacy-Management-System.svg)](https://replit.com/github/TawsifXD/Phermacy-Management-System)
 
 Describe the tools needed to deploy a new project.
 
